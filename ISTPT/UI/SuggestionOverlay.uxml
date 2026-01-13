@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="container" class="istpt-container">
+        <!-- Content -->
+        <ui:VisualElement class="istpt-content">
+            <ui:Label name="lbl-action-name" text="Action Name" class="istpt-action-name" />
+            <ui:Label name="lbl-shortcut" text="Ctrl + Shift + A" class="istpt-shortcut-display" />
+            
+            <!-- Stats element removed -->
+        </ui:VisualElement>
+
+        <!-- Toolbar -->
+        <ui:VisualElement class="istpt-toolbar">
+            <ui:Toggle name="toggle-loop" label="Loop" value="true" class="istpt-toggle" />
+            <ui:IntegerField name="field-interval" value="20" class="istpt-interval-field" style="width: 40px; margin-left: 5px;" />
+            <ui:Label text="s" style="align-self: center; margin-right: 10px; color: #AAAAAA;" />
+
+            <ui:Button name="btn-google-search" text="Google This" class="istpt-snooze-btn" style="background-color: #4CAF50; color: white; margin-right: 5px; margin-left: auto;" />
+            <ui:Button name="btn-snooze" text="Snooze (1 hr)" class="istpt-snooze-btn" />
+            <ui:Button name="btn-close" text=">" class="istpt-close-btn" style="margin-left: 5px; background-color: transparent; border-width: 0; color: #AAAAAA;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
